@@ -5,6 +5,7 @@ import { ButtonIcon } from '../../components/ButtonIcon';
 import IllustrationImg from '../../assets/illustration.png';
 import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
+import { Background } from '../../components/Background';
 
 
 
@@ -14,7 +15,9 @@ export function SignIn(){
     function handleSignIn(){
       navigation.navigate('Home');
     }
+  
   return(
+    <Background>
     <View style={styles.container}>
      <Image 
      source={IllustrationImg}
@@ -25,8 +28,8 @@ export function SignIn(){
      <View style={styles.content}>
        <Text style={styles.title}>
         Conecte-se {'\n'} 
-        e organize suas {'\n'}
-        jogatinas {'\n'}
+        e organize seus {'\n'}
+        jogos {'\n'}
        </Text>
 
        <Text style={styles.subtitle}>
@@ -40,5 +43,6 @@ export function SignIn(){
        />
      </View>
     </View>
+    </Background>
   );
 }
