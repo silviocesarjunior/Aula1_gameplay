@@ -28,6 +28,24 @@ export function Guilds({ handleGuildSelect}: Props){
         name: 'Counter-Strike',
         icon: 'image.png',
         owner: true
+    },
+    {
+        id: '4',
+        name: 'Galera do Fifa',
+        icon: 'image.png',
+        owner: true
+    },
+    {
+        id: '5',
+        name: 'Galera do Fifa',
+        icon: 'image.png',
+        owner: true
+    },
+    {
+        id: '6',
+        name: 'Galera do Fifa',
+        icon: 'image.png',
+        owner: true
     }
 ];
 
@@ -43,7 +61,9 @@ return (
                 />
             )}
             showsVerticalScrollIndicator={false}
-            ItemSeparatorComponent={() => <ListDivider/>}
+            ItemSeparatorComponent={() => <ListDivider isCentered/>}
+            ListHeaderComponent={() => <ListDivider isCentered/>}
+            contentContainerStyle={{paddingBottom: 68, paddingTop: 103}}
             style={styles.guilds}
             />
     </View>
