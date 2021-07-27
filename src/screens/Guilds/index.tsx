@@ -22,30 +22,6 @@ export function Guilds({ handleGuildSelect}: Props){
         name: 'Galera do Fifa',
         icon: 'image.png',
         owner: true
-    },
-    {
-        id: '3',
-        name: 'Counter-Strike',
-        icon: 'image.png',
-        owner: true
-    },
-    {
-        id: '4',
-        name: 'Galera do Fifa',
-        icon: 'image.png',
-        owner: true
-    },
-    {
-        id: '5',
-        name: 'Galera do Fifa',
-        icon: 'image.png',
-        owner: true
-    },
-    {
-        id: '6',
-        name: 'Galera do Fifa',
-        icon: 'image.png',
-        owner: true
     }
 ];
 
