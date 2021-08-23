@@ -8,17 +8,16 @@ import { styles } from './styles';
 
 export function Profile () {
     const {user} = useAuth();
+    console.log(user);
     return(
        <View style={styles.container}>
 
            <Avatar urlImage={user.avatar}/>
 
-
-
            <View>
                <View style={styles.user}> 
                    <Text style={styles.greeting}>
-                       Olá
+                       Hello,
                    </Text>
 
                    <Text style={styles.username}>
@@ -27,7 +26,7 @@ export function Profile () {
                </View>
 
                <Text style={styles.message}>
-                   Hoje é dia de vitória
+                   Bora agendar uma partida!
                </Text>
            </View>
            
