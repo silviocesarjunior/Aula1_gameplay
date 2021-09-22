@@ -22,7 +22,7 @@ import { useNavigation } from '@react-navigation/native';
 export function AppointmentCreate(){
     const [category, setCategory] = useState('');
     const [openGuildsModa, setOpenGuildsModal] = useState(false);
-    const [guild,setGuild] = useState<GuildProps>({} as GuildProps);
+    const [guild, setGuild] = useState<GuildProps>({} as GuildProps);
 
     const [day,setDay] = useState('');
     const [month,setMonth] = useState('');
@@ -91,7 +91,9 @@ export function AppointmentCreate(){
             <RectButton onPress={handleOpenGuilds}>
                 <View style={styles.select}>
                     {
-                        guild.icon ? <GuildIcon guildId={guild.id} iconId={guild.icon} /> : <View style={styles.image} />
+                        guild.icon ? 
+                        <GuildIcon guildId={guild.id} iconId={guild.icon} /> 
+                        : <View style={styles.image} />
                     }
                     <View style={styles.selectBody}>
                         <Text style={styles.label}>
@@ -151,6 +153,7 @@ export function AppointmentCreate(){
                     Max 100 caracteres
                 </Text>
             </View>
+            
             <TextArea
                 multiline
                 maxLength={100}
